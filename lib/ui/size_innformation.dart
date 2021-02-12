@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:responsive_architecture/enums/device_sreen_type.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +14,6 @@ class SizingInforamation {
       this.localWidgetSize});
   @override
   String toString() {
-    return 'Orientation :$orientation DeviceType:$deviceScreenType Screen Size:$screenSize localWidgetSized $localWidgetSize';
+    return 'Orientation :$orientation ;DeviceType:$deviceScreenType; Screen Size:$screenSize ;localWidgetSized $localWidgetSize';
   }
 }

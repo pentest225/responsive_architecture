@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_architecture/ui/views/home_views.dart';
@@ -7,7 +5,8 @@ import 'package:responsive_architecture/ui/views/home_views.dart';
 void main() {
   runApp(DevicePreview(
     enabled: true,
-    builder:(context)=> MyApp(),));
+    builder: (context) => MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,11 +18,10 @@ class MyApp extends StatelessWidget {
       builder: DevicePreview.appBuilder,
       title: 'Responcive Architecture ',
       theme: ThemeData(
-         primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home:HomeView(),
+      home: HomeView(),
     );
   }
 }
-
